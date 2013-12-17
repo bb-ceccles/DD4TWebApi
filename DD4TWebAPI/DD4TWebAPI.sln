@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DD4TWebAPI", "DD4TWebAPI\DD4TWebAPI.csproj", "{26DBA121-F1F0-43B2-86E9-D411474D6781}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DD4TWebApiBase", "DD4TWebApiBase\DD4TWebApiBase.csproj", "{C8797DDE-025D-45EC-A37F-7AD1408FA6D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "ViewModels\ViewModels.csproj", "{C25D0D04-4DB8-456D-8FD0-E7FF63022F8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26DBA121-F1F0-43B2-86E9-D411474D6781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26DBA121-F1F0-43B2-86E9-D411474D6781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26DBA121-F1F0-43B2-86E9-D411474D6781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26DBA121-F1F0-43B2-86E9-D411474D6781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8797DDE-025D-45EC-A37F-7AD1408FA6D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8797DDE-025D-45EC-A37F-7AD1408FA6D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8797DDE-025D-45EC-A37F-7AD1408FA6D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8797DDE-025D-45EC-A37F-7AD1408FA6D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C25D0D04-4DB8-456D-8FD0-E7FF63022F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C25D0D04-4DB8-456D-8FD0-E7FF63022F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C25D0D04-4DB8-456D-8FD0-E7FF63022F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C25D0D04-4DB8-456D-8FD0-E7FF63022F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

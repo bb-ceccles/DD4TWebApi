@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8797DDE-025D-45EC-A37F-7AD1408FA6D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DD4TWebApiBase</RootNamespace>
+    <AssemblyName>DD4TWebApiBase</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BuildingBlocks.DD4T.MarkupModels">
+      <HintPath>..\packages\BuildingBlocks.DD4T.MarkupModels.0.39.0.0-alpha\lib\net40\BuildingBlocks.DD4T.MarkupModels.dll</HintPath>
+    </Reference>
+    <Reference Include="DD4T.ContentModel">
+      <HintPath>..\packages\DD4TFramework.1.30.0\lib\DD4T.ContentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="DD4T.ContentModel.Contracts">
+      <HintPath>..\packages\DD4TFramework.1.30.0\lib\DD4T.ContentModel.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="DD4T.ContentModel.XmlSerializers">
+      <HintPath>..\packages\DD4TFramework.1.30.0\lib\DD4T.ContentModel.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="DD4T.Factories">
+      <HintPath>..\packages\DD4TFramework.1.30.0\lib\DD4T.Factories.dll</HintPath>
+    </Reference>
+    <Reference Include="DD4T.Mvc">
+      <HintPath>..\packages\DD4TFramework.1.30.0\lib\DD4T.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="DD4T.Providers.SDLTridion2013">
+      <HintPath>..\packages\DD4TFramework.1.30.0\lib\DD4T.Providers.SDLTridion2013.dll</HintPath>
+    </Reference>
+    <Reference Include="DD4T.Utils">
+      <HintPath>..\packages\DD4TFramework.1.30.0\lib\DD4T.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="DD4T.Web">
+      <HintPath>..\packages\DD4TFramework.1.30.0\lib\DD4T.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.0.2-unstable-9043\lib\net40\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tridion.ContentDelivery">
+      <HintPath>..\DD4TWebAPI\bin\Tridion.ContentDelivery.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\SimplePageApiController.cs" />
+    <Compile Include="Controllers\DynamicContentController.cs" />
+    <Compile Include="Controllers\PageApiController.cs" />
+    <Compile Include="Models\ComponentModel.cs" />
+    <Compile Include="Models\ComponentPresentationModel.cs" />
+    <Compile Include="Models\FeildModel.cs" />
+    <Compile Include="Models\ModelFactory.cs" />
+    <Compile Include="Models\PageModel.cs" />
+    <Compile Include="Modules\DD4TWebApiNinjectModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DynamicContentService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
