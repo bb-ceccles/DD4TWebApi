@@ -11,9 +11,10 @@ Exposes IComponents of dynamic components based on there tcmid or meta data fiel
 I also started incorporating strongly typed views using the Mark-up models solution designed by Rob Stevenson-Leggett here at building blocks (more on that here  and the code is available on git hub)
 
 I created a new web API solution using the following required nuget packages
--DD4T
--BuildingBlocks.DD4T.MarkupModels
--Ninject
+
+* DD4T
+* BuildingBlocks.DD4T.MarkupModels
+* Ninject
 
 I configured up the project to use DD4T using ninject as described in another blog post by Rob.
 
@@ -59,10 +60,11 @@ The PageApi controller had the one method that took in the page url and using th
     	}
 
 I then extended this slightly as the full page XML might not be as useful as an API and we might want a cut down version of the data. I added a new route and a new controller. This time I passed the IComponent in to a new Model Factory. I created basic Models for:
--PageModel
--ComponentPresentationModel
--ComponentModel
--FeildModel
+
+* PageModel
+* ComponentPresentationModel
+* ComponentModel
+* FeildModel
 
 Having a new Create method on the Model Factory that took in the different DD4T component types and returned a new instance of the new view models after populating the various fields.
 
